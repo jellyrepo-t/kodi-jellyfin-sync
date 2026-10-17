@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.jellyfin_sync" name="Jellyfin Sync" version="1.7.3" provider-name="JellyfinSync">
+<addon id="plugin.video.jellyfin_sync" name="Jellyfin Sync" version="1.7.4" provider-name="JellyfinSync">
 
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -24,7 +24,8 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="cs">Synchronizace Jellyfin knihovny do Kodi</summary>
     <description lang="cs">Stáhne filmy a seriály z Jellyfin serveru a zapíše je přímo do Kodi databáze. Automatický sync každý den ve 2:00 ráno.</description>
-    <news>1.7.3: Menu doplňku s ikonami a srozumitelnějšími českými popisky (čas poslední synchronizace v popisu položky).
+    <news>1.7.4: TMDb Helper: údaje z knihovny Kodi (= z Jellyfinu) se nastaví na "Preferred", takže filmy, které máš na serveru, jsou v TMDb seznamech vidět jako vlastněné. Vlastní volbu nepřepíše.
+1.7.3: Menu doplňku s ikonami a srozumitelnějšími českými popisky (čas poslední synchronizace v popisu položky).
 1.7.2: Oprava zasekávání Kodi 21.2 po zastavení filmu (vypnutí HTTP/2 v advancedsettings.xml, nabízí průvodce a menu; soubor se jen doplní a zazálohuje). Přednastavení vzhledu bez druhé obrazovky Trakt.
 1.7.1: Lehké nastavení vzhledu: místo rozkoukaných seriálů z Traktu populární seriály z TMDb. Instalace skinu si sama obnoví repozitáře a s dovolením povolí doplňky i z jiných repozitářů. Náhledy jen pro obrázky, které na serveru existují (bez chyb 404), a bez duplicit v databázi. Čas posledního syncu v UTC. Seriály doplněné z epizod už nespouštějí zbytečnou kontrolu úklidu.
 1.7.0: Nový krok průvodce i položka menu "Vzhled": nainstaluje skin Arctic Fuse 3 a nastaví úvodní obrazovku s TMDb widgety - lehké nastavení (méně widgetů, bez náročných efektů, vhodné pro Google TV) nebo plné. Vlastní nastavení skinu nepřepíše bez dotazu (záloha .pred_jellyfinsync).
