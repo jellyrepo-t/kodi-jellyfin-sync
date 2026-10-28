@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.jellyfin_sync" name="Jellyfin Sync" version="1.7.6" provider-name="JellyfinSync">
+<addon id="plugin.video.jellyfin_sync" name="Jellyfin Sync" version="1.7.7" provider-name="JellyfinSync">
 
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -24,7 +24,8 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="cs">Synchronizace Jellyfin knihovny do Kodi</summary>
     <description lang="cs">Stáhne filmy a seriály z Jellyfin serveru a zapíše je přímo do Kodi databáze. Automatický sync každý den ve 2:00 ráno.</description>
-    <news>1.7.6: Funguje i s účtem bez práv administrátora na Jellyfinu (dřív HTTP 403 při připojení a přehrávání): místo API klíče se použije token z přihlášení. Každá instalace má vlastní ID zařízení.
+    <news>1.7.7: Bezpečnost a spolehlivost: API klíče, tokeny a hesla se maskují v logu Kodi; token z přihlášení se při přesměrování na jiný server neposílá dál; "Opravit databázi" před úpravou zálohuje databázi (bez zálohy se nespustí); adresa serveru se správně zapisuje do sources.xml i když obsahuje speciální znaky.
+1.7.6: Funguje i s účtem bez práv administrátora na Jellyfinu (dřív HTTP 403 při připojení a přehrávání): místo API klíče se použije token z přihlášení. Každá instalace má vlastní ID zařízení.
 1.7.5: Oprava instalace skinu Arctic Fuse 3 (krok Vzhled): doplněk se spletl o vlastní průběhový dialog, instalaci skinu nespustil a po 5 minutách ohlásil chybu.
 1.7.4: TMDb Helper: údaje z knihovny Kodi (= z Jellyfinu) se nastaví na "Preferred", takže filmy, které máš na serveru, jsou v TMDb seznamech vidět jako vlastněné. Vlastní volbu nepřepíše.
 1.7.3: Menu doplňku s ikonami a srozumitelnějšími českými popisky (čas poslední synchronizace v popisu položky).
